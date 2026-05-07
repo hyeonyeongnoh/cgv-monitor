@@ -23,4 +23,6 @@ jobs:
         env:
           CGV_COOKIE: ${{ secrets.CGV_COOKIE }}
           KAKAO_TOKEN: ${{ secrets.KAKAO_TOKEN }}
-        run: python cgv_monitor_nationwide.py
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MY_REPO: ${{ secrets.MY_REPO }}
+        run: python cgv_monitor_final_v2.py
